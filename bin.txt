@@ -1,0 +1,7 @@
+<img
+        src={splash}
+        alt="Splash Logo"
+        className={` sm:w-[40%] absolute transition-all duration-[2700ms] ease-in-out ${
+          clicked ? 'scale-250 opacity-0 ' : 'opacity-100 scale-100'
+        }`}
+      />

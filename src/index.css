@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Rubik+Glitch&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sora:wght@100..800&family=Varela+Round&display=swap');
+@import "tailwindcss";
+
+*{
+ 
+  box-sizing: border-box;
+}
+@theme{
+
+
+  /*Color*/
+  --color-primary: #141414;
+  --color-secondary: #1E1E1E;
+  --color-accent: #db1c27;
+
+
+  /*Text Body*/
+  --text-mb: 11px;
+  --text-lp: 14px;
+  --text-comp: 14px;
+
+  --font-glitch: 'Rubik Glitch', sans-serif; 
+}
+
+
+.hover-forward {
+  transition: transform 0.5s ease-in-out;
+}
+
+.hover-forward:hover {
+  transform: scale(1.1);
+}
+
+.index path{
+  fill: transparent;
+  stroke: #db1c27;
+  stroke-width: 10;
+  stroke-dasharray: 1150;
+  stroke-dashoffset: 11150;
+  animation: textAnimation 2000ms ease-in-out 1 forwards;
+
+}
+
+@keyframes textAnimation {
+  0%{
+    stroke-dashoffset: 3050;
+  }
+  80%{
+    fill:transparent;
+  }
+  100%{
+    fill:#db1c27;
+    stroke-dashoffset: 1150;
+    stroke: 0;
+  }
+}
+
+
+
+@keyframes fades {
+  0% {
+
+    opacity: 0;
+  }
+  100% {
+    
+    opacity: 1;
+  }
+}
+
+.fades {
+  animation: fades 2s ease ;
+
+}
+
+
+
+@keyframes intro {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.intro {
+  animation: intro 1s ease forwards;
+}
+
+
+@keyframes sidebar {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.sidebar {
+  animation: sidebar 500ms ease-in-out forwards;
+}
+
+
+.scroll-up::before{
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 85px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent);
+  z-index: -1;
+
+}
+
+.scroll-down{
+  position: fixed;
+  width: 100%;
+  height: 85px;
+  background:  rgba(0, 0, 0, 1);
+}
+@media (max-width: 640px) {
+  .scroll-down{
+    height: 65px;
+  }
+}
+
+.char{
+  transform: translateY(53px);
+  transition: transform .1s;
+  display: inline-block;
+  white-space: pre;
+}
+
+.skill-title{
+  clip-path: polygon(0 0 ,100% 0, 100% 100%, 0% 100%);
+  line-height: 1.2rem;
+}
