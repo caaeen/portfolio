@@ -4,6 +4,7 @@ import './index.css'
 import App from './App.jsx'
 import Visitor from './components/type/visitor.jsx'
 import Skills from './components/skills.jsx'
+import Projects from './components/projects.jsx'
 import Recruiter from './components/type/recruiter.jsx'
 import {createBrowserRouter, RouterProvider} from "react-router-dom"
 import Browse from './components/browse.jsx'
@@ -32,6 +33,11 @@ const router = createBrowserRouter([
   {
     path: "/profile/skills/:type",
     element: <Skills/>,
+    elementError: <div>Error 404</div>,
+  },
+  {
+    path: "/profile/projects/:type",
+    element: <Projects/>,
     elementError: <div>Error 404</div>,
   }
 ])

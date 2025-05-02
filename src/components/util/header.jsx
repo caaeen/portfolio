@@ -70,15 +70,15 @@ const Header = ({type}) => {
             <div className='sm:flex hidden z-30 w-full px-7  gap-4 '>
                 <Link to="/browse" className='hover:text-accent ease duration-200 text-white'>Home</Link>
                 <Link to={`/profile/skills/${type}`} className='hover:text-accent ease duration-200 text-white'>Skills</Link>
-                <Link to="" className='hover:text-accent ease duration-200 text-white'>Projects</Link>
-                <Link to="" className='hover:text-accent ease duration-200 text-white'>Contacts</Link>
+                <Link to={`/profile/projects/${type}`} className='hover:text-accent ease duration-200 text-white'>Projects</Link>
+                <Link to={`/profile/contacts/${type}`} className='hover:text-accent ease duration-200 text-white'>Contacts</Link>
             </div>
             <div  className='mr-4 flex gap-3 items-center sm:pr-5 pr-1 w-full justify-end'>
                 <Link to='/browse'><img src={profile} className="sm:w-[40px] w-[30px] border border-white rounded-[50px]" alt="" /></Link>
                 <i onClick={()=>setSidebar(true)} className="fa-solid text-white fa-bars cursor-pointer hover:text-accent ease duration-200"></i>
             </div>
         </header>
-        <Sidebar sideBar={sidebar} setSidebar={setSidebar}/>
+        <Sidebar sideBar={sidebar} setSidebar={setSidebar} type={type}/>
     </div>
   )
 }

@@ -12,7 +12,7 @@
   --color-primary: #141414;
   --color-secondary: #1E1E1E;
   --color-accent: #db1c27;
-
+  --color-tertiary:#2C2C2C;
 
   /*Text Body*/
   --text-mb: 11px;
@@ -121,13 +121,10 @@
   position: fixed;
   width: 100%;
   height: 85px;
-  background:  rgba(0, 0, 0, 1);
+  background:  rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
 }
-@media (max-width: 640px) {
-  .scroll-down{
-    height: 65px;
-  }
-}
+
 
 .char{
   transform: translateY(53px);
@@ -139,4 +136,60 @@
 .skill-title{
   clip-path: polygon(0 0 ,100% 0, 100% 100%, 0% 100%);
   line-height: 1.2rem;
+}
+@theme {
+  --animate-wiggle: wiggle 1s ease-in-out forwards;
+  @keyframes wiggle {
+    0%,
+    100% {
+      transform: rotate(-1deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+
+    
+    
+  }
+}
+@theme{
+  --animate-bounceOnce: bounceOnce 0.3s ease forwards;
+    @keyframes bounceOnce {
+      0%, 100% {
+        transform: translateY(0);
+        
+      }
+      50% {
+        transform: translateY(-8px);
+
+      }
+    }
+}
+@theme {
+  --animate-bounceScale: bounceScale 1000ms ease-in-out forwards;
+
+  @keyframes bounceScale {
+    0% {
+      transform: scale(1);
+    }
+    30% {
+      transform: scale(0.98);
+    }
+    50% {
+      transform: scale(1);
+    }
+    70% {
+      transform: scale(0.99);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .scroll-down{
+    height: 65px;
+  }
+  
 }

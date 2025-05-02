@@ -27,7 +27,6 @@ const Recruiter = () => {
             </div>
         </div>
 
-
         <div className='w-full h-full px-5 text-white pt-15'>
             <div>
                 <b className='text-2xl'>Today's Top Picks For Recruiter</b><br />
@@ -43,8 +42,7 @@ const Recruiter = () => {
             <div>
                 <b className='text-2xl'>Continue Watching For Recruiter</b><br />
                 <div className='relative text-white max-w-vw flex grow-0 shrink-0 gap-5 overflow-x-auto py-4 pb-10'>
-                    <Card title={"Projects"} img_url={""}/>
-                
+                    <Card title={"Projects"} img_url={""}/>               
                 </div>
             </div>
         </div>
