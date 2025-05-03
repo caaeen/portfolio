@@ -67,10 +67,13 @@ const Header = ({type}) => {
         <header ref={headerRef} className="w-full z-40 fixed scroll-up sm:h-[85px] h-[65px] flex items-center ease-in duration-300  ">
            {/* <div className="w-full  z-20 fixed h-[85px] mask-b-from-0% mask-b-to-60% bg-black ..."></div> */}
             <img onClick={(e)=>window.location.href='/'} src={splash} className='cursor-pointer sm:w-[290px] w-[180px] ml-4'  alt="" />
-            <div className='sm:flex hidden z-30 w-full px-7  gap-4 '>
+            <div className='lg:flex hidden z-30 w-full px-7  gap-4 '>
                 <Link to="/browse" className='hover:text-accent ease duration-200 text-white'>Home</Link>
+                <Link to={`/profile/${type}`} className='hover:text-accent ease duration-200 text-white'>About</Link>
                 <Link to={`/profile/skills/${type}`} className='hover:text-accent ease duration-200 text-white'>Skills</Link>
                 <Link to={`/profile/projects/${type}`} className='hover:text-accent ease duration-200 text-white'>Projects</Link>
+                <Link to={`/profile/experience/${type}`} className='hover:text-accent ease duration-200 text-white'>Experience</Link>
+                <Link to={`/profile/blogs/${type}`} className='hover:text-accent ease duration-200 text-white'>Blogs</Link>
                 <Link to={`/profile/contacts/${type}`} className='hover:text-accent ease duration-200 text-white'>Contacts</Link>
             </div>
             <div  className='mr-4 flex gap-3 items-center sm:pr-5 pr-1 w-full justify-end'>

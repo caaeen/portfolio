@@ -153,33 +153,37 @@
   }
 }
 @theme{
-  --animate-bounceOnce: bounceOnce 0.3s ease forwards;
+  --animate-bounceOnce: bounceOnce 0.4s ease forwards;
     @keyframes bounceOnce {
       0%, 100% {
         transform: translateY(0);
         
       }
       50% {
-        transform: translateY(-8px);
+        transform: translateY(-10px);
+
+      }
+      20% {
+        transform: translateY(10px);
 
       }
     }
 }
 @theme {
-  --animate-bounceScale: bounceScale 1000ms ease-in-out forwards;
+  --animate-bounceScale: bounceScale 800ms ease-in-out forwards;
 
   @keyframes bounceScale {
     0% {
       transform: scale(1);
     }
     30% {
-      transform: scale(0.98);
+      transform: scale(0.93);
     }
     50% {
       transform: scale(1);
     }
     70% {
-      transform: scale(0.99);
+      transform: scale(0.96);
     }
     100% {
       transform: scale(1);

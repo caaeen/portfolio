@@ -33,7 +33,7 @@ const Projects = () => {
         <Header type={type} />
       </div>
       <div className="w-full h-full grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 p-5 gap-4">
-          <ProjectsCard github={""} link={""} icons={["fa-brands fa-react"]} tools={["React", "la"]} body={"Lorem"} title={"Phytosense: Crop Disease Diagnostic Platform"} ref={(el) => (cardRefs.current[0] = el)} />
+          <ProjectsCard github={"#"} link={"#"} icons={["fa-brands fa-react"]} tools={["React", "la"]} body={"Lorem"} title={"Phytosense: Crop Disease Diagnostic Platform"} ref={(el) => (cardRefs.current[0] = el)} />
           <ProjectsCard github={""} link={""} icons={["fa-brands fa-react", "fa-brands fa-react"]} tools={["PHP", "React"]} body={"Lorem"} title={"Phytosense: Crop Disease Diagnostic Platform"} ref={(el) => (cardRefs.current[1] = el)} />
           <ProjectsCard github={""} link={""} icons={["fa-brands fa-react", "fa-brands fa-react"]} tools={["PHP", "React"]} body={"Lorem"} title={"Phytosense: Crop Disease Diagnostic Platform"} ref={(el) => (cardRefs.current[2] = el)} />
           <ProjectsCard github={""} link={""} icons={["fa-brands fa-react", "fa-brands fa-react"]} tools={["PHP", "React"]} body={"Lorem"} title={"Phytosense: Crop Disease Diagnostic Platform"} ref={(el) => (cardRefs.current[3] = el)} />

@@ -9,8 +9,11 @@ const Sidebar = ({sideBar, setSidebar, type}) => {
                     <i onClick={()=>setSidebar(false)} className="fa-solid fa-xmark cursor-pointer hover:text-accent ease duration-200"></i>
                     <div className='flex flex-col gap-3'><br />
                         <Link to="/browse" className='flex items-center gap-4 hover:bg-gray-500/30  cursor-pointer p-2 rounded'><i className="fa-solid fa-house"></i> Home</Link>
+                        <Link to={`/profile/${type}`} className='flex items-center gap-4 hover:bg-gray-500/30  cursor-pointer p-2 rounded'><i className="fa-solid fa-circle-info"></i> About</Link>
                         <Link to={`/profile/skills/${type}`} className='flex items-center gap-4 hover:bg-gray-500/30  cursor-pointer p-2 rounded'><i className="fa-solid fa-screwdriver-wrench"></i> Skills</Link>
                         <Link to={`/profile/projects/${type}`} className='flex items-center gap-4 hover:bg-gray-500/30  cursor-pointer p-2 rounded'><i className="fa-solid fa-list-check"></i> Projects</Link>
+                        <Link to={`/profile/experience/${type}`} className='flex items-center gap-4 hover:bg-gray-500/30  cursor-pointer p-2 rounded'><i className="fa-solid fa-calendar-days"></i> Experience</Link>
+                        <Link to={`/profile/blogs/${type}`} className='flex items-center gap-4 hover:bg-gray-500/30  cursor-pointer p-2 rounded'><i className="fa-solid fa-blog"></i> Blogs</Link>
                         <Link to={`/profile/contacts/${type}`} className='flex items-center gap-4 hover:bg-gray-500/30  cursor-pointer p-2 rounded'><i className="fa-solid fa-phone"></i> Contacts</Link>
                     </div>
                 </div>

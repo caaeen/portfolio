@@ -29,8 +29,8 @@ const SkillCard = ({logo, name, subtitle}) => {
   
   //logo = "fa-brands fa-react";
   return (
-    <div ref={skillCard} className='items-center hover:scale-105 ease duration-300 fades cursor-pointer shadow-md rounded-[5px] grow-1 min-w-[100px] max-w-[180px] min-h-[150px] sm:text-comp text-mb p-2 pt-5 flex flex-col gap-4 bg-secondary pb-4'>
-        <i className={` text-accent text-[30px] ${logo}`}></i>
+    <div ref={skillCard} className='items-center hover:scale-105 active:scale-105 ease duration-300 fades cursor-pointer shadow-md rounded-[5px] grow-1 min-w-[100px] max-w-[180px] min-h-[150px] sm:text-comp text-mb p-2 pt-5 flex flex-col gap-4 bg-secondary pb-4'>
+        <i className={` text-accent text-[30px]  ${logo}`}></i>
         <b className=' text-comp'>{name}</b>
         <p  className='skill-title text-gray-300/80 fades'>{subtitle}</p>
     </div>
