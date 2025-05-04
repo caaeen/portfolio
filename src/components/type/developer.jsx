@@ -14,10 +14,12 @@ const Recruiter = () => {
           <b className='sm:text-4xl text-2xl '>Christopher Canada - Web Developer</b><br />
           <div className='mb-3 w-full'></div>
           <p className='sm:w-[70%] sm:text-lp text-mb font-bold'>
-            Lorem Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus itaque iusto corporis ex porro,
-            fuga officiis corrupti expedita rem laboriosam, velit dolore quaerat ad cumque architecto nostrum delectus odio rerum?
-            ipsum dolor sit, amet consectetur adipisicing elit. Corrupti ea obcaecati impedit tempora sunt eveniet vel enim quos
-            assumenda voluptas sint, incidunt eum veritatis debitis quisquam fugit. In, omnis rem?
+            Hi, I'm Christopher Canda an undergraduate of Bachelor's of Science in Information Technology. 
+            Throughout my education, I have focused on developing myself to be a work oriented leader. 
+            My proficiency and experience in building projects such as machine
+            learning and information management systems has given me the opportunity to
+            strengthen my analytical and problem solving skills, as well as effective collaboration
+            skills with my team.
           </p>
         </div>
         <div className='z-30 w-full px-5 flex gap-5 pb-10'>

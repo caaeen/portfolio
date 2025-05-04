@@ -14,10 +14,13 @@ const Visitor = () => {
           <b className='sm:text-4xl text-2xl '>Christopher Canada - Web Developer</b><br />
           <div className='mb-3 w-full'></div>
           <p className='sm:w-[70%] sm:text-lp text-mb font-bold'>
-            Lorem Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus itaque iusto corporis ex porro,
-            fuga officiis corrupti expedita rem laboriosam, velit dolore quaerat ad cumque architecto nostrum delectus odio rerum?
-            ipsum dolor sit, amet consectetur adipisicing elit. Corrupti ea obcaecati impedit tempora sunt eveniet vel enim quos
-            assumenda voluptas sint, incidunt eum veritatis debitis quisquam fugit. In, omnis rem?
+            Hi, I'm Christopher Canda an undergraduate of Bachelor's of Science in Information Technology. 
+            Throughout my education, I have focused on developing myself to be a work oriented leader. 
+            My proficiency and experience in building projects such as machine
+            learning and information management systems has given me the opportunity to
+            strengthen my analytical and problem solving skills, as well as effective collaboration
+            skills with my team.
+
           </p>
         </div>
         <div className='z-30 w-full px-5 flex gap-5 pb-10'>
@@ -36,7 +39,7 @@ const Visitor = () => {
 
       <div className='w-full h-full px-5 text-white pt-15'>
         <div>
-          <b className='text-2xl'>Today's Top Picks for visitor</b><br />
+          <b className='text-2xl'>Today's Top Picks For Visitor</b><br />
           <div className='relative text-white max-w-vw flex grow-0 shrink-0 gap-5 overflow-x-auto scrollbar-hide py-4 pb-10'>
             <Card urls={'/profile/projects/visitor'} title={"Projects"} img_url={"https://images.unsplash.com/photo-1607791330831-d3dcf312e2d1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} />
             <Card urls={'/profile/skills/visitor'} title={"Skills"} img_url={"https://images.unsplash.com/photo-1493514789931-586cb221d7a7?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} />
@@ -48,7 +51,7 @@ const Visitor = () => {
 
       <div className='w-full h-full px-5 text-white pt-15'>
         <div>
-          <b className='text-2xl'>Continue Watching for visitor</b><br />
+          <b className='text-2xl'>Continue Watching For Visitor</b><br />
           <div className='relative text-white max-w-vw flex grow-0 shrink-0 gap-5 overflow-x-auto py-4 pb-10'>
             <Card urls={'/profile/blogs/visitor'} title={"Blogs"} img_url={"https://images.unsplash.com/photo-1451481086097-f6a15d5f8d18?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} />
             <Card urls={'/profile/contacts/visitor'} title={"Contacts"} img_url={"https://images.unsplash.com/photo-1442508748335-fde9c3f58fd9?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} />
