@@ -12,7 +12,7 @@ const Browse = () => {
  
   return (
     <div className='w-full h-svh bg-primary flex flex-col sm:gap-5 gap-3 justify-center items-center'>
-        <p className='fades text-white sm:text-5xl text-2xl'>Who's Wacthing</p>
+        <p className='fades text-white sm:text-5xl text-2xl'>Who's Watching</p>
         <div className='md:w-[60%] w-[90%] grid place-items-center gap-3 sm:grid-cols-4 grid-cols-2  p-5'>
 
           <Link to="/profile/visitor" className="fades flex flex-col justify-center items-center gap-3 cursor-pointer ">
