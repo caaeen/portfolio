@@ -9,6 +9,8 @@ import Contacts from './components/contacts.jsx'
 import Blogs from './components/blogs.jsx'
 import Experience from './components/experience.jsx'
 import Recruiter from './components/type/recruiter.jsx'
+import Seeker from './components/type/seeker.jsx'
+import Developer from './components/type/developer.jsx'
 import {createBrowserRouter, RouterProvider} from "react-router-dom"
 import Browse from './components/browse.jsx'
 
@@ -31,6 +33,15 @@ const router = createBrowserRouter([
   {
     path: "/profile/recruiter",
     element: <Recruiter/>,
+    elementError: <div>Error 404</div>,
+  },
+  {
+    path: "/profile/seeker",
+    element: <Seeker/>,
+    elementError: <div>Error 404</div>,
+  },{
+    path: "/profile/developer",
+    element: <Developer/>,
     elementError: <div>Error 404</div>,
   },
   {

@@ -3,13 +3,14 @@ import {gsap} from 'gsap'
 import Header from './util/header.jsx'
 import SkillCard from './util/skillCard.jsx'
 import { useParams } from 'react-router-dom';
-
+import ScrollTop from './util/scrollTop.jsx'
 const Skills = () => {
 const { type } = useParams();
 
 
   return (
     <div className='w-full relative min-h-svh bg-primary'> 
+        < ScrollTop/>
         <div className='sm:h-[85px] h-[65px] w-full'>
             <Header type={type}/>
         </div>
@@ -42,10 +43,10 @@ const { type } = useParams();
                 <b className="intro sm:text-2xl text-[18px] border-b-[2px] border-accent pb-3">Designer's Tool</b>
                 <div className='mt-10 flex flex-wrap gap-5 justify-center'>
                     <SkillCard logo={"fa-solid fa-cannabis"} name={"Canva"} subtitle={"Design Prototyping"}/>
-                    <SkillCard logo={"fa-solid fa-p"} name={"Photoshop"} subtitle={"Structure Builder"}/>
-                    <SkillCard logo={"fa-brands fa-css3-alt"} name={"Filmora"} subtitle={"Structure Designer"}/>
-                    <SkillCard logo={"fa-brands fa-css3"} name={"Figma"} subtitle={"CSS Framework"}/>
-                    <SkillCard logo={"fa-brands fa-css3"} name={"DB Diagram"} subtitle={"Database Designer | Visuals"}/>
+                    <SkillCard logo={"fa-solid fa-p"} name={"Photoshop"} subtitle={"Photo Manipulation and Graphic Design"}/>
+                    <SkillCard logo={"fa-solid fa-film"} name={"Filmora"} subtitle={"Video Editing Tool"}/>
+                    <SkillCard logo={"fa-brands fa-figma"} name={"Figma"} subtitle={"Website Design Prototyping"}/>
+                    <SkillCard logo={"fa-brands fa-mdb"} name={"DB Diagram"} subtitle={"Database Designer | Visuals"}/>
                 </div>
             </div>
 

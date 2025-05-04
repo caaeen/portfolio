@@ -26,16 +26,16 @@ const Browse = () => {
           </Link>
 
 
-          <div className="fades flex flex-col justify-center items-center gap-3 cursor-pointer ">
+          <Link to="/profile/seeker" className="fades flex flex-col justify-center items-center gap-3 cursor-pointer ">
             <img src={blue} className="sm:w-[170px] w-[130px] rounded-[5px] hover:border-[2px] ease-in duration-50" alt="" />
             <p className="text-white sm:text-[20px] text-[16px]">Seeker</p>
-          </div>
+          </Link>
 
 
-          <div className="fades flex flex-col justify-center items-center gap-3 cursor-pointer ">
+          <Link to="/profile/developer" className="fades flex flex-col justify-center items-center gap-3 cursor-pointer ">
             <img src={green} className="sm:w-[170px] w-[130px] rounded-[5px] hover:border-[2px] ease-in duration-50" alt="" />
             <p className="text-white sm:text-[20px] text-[16px]">Developer</p>
-          </div>
+          </Link>
 
           
 

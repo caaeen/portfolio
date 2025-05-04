@@ -73,7 +73,7 @@ const Header = ({type}) => {
                 <Link to={`/profile/skills/${type}`} className='hover:text-accent ease duration-200 text-white'>Skills</Link>
                 <Link to={`/profile/projects/${type}`} className='hover:text-accent ease duration-200 text-white'>Projects</Link>
                 <Link to={`/profile/experience/${type}`} className='hover:text-accent ease duration-200 text-white'>Experience</Link>
-                <Link to={`/profile/blogs/${type}`} className='hover:text-accent ease duration-200 text-white'>Blogs</Link>
+                <Link to={`/profile/blogs/${type}`} className='hover:text-accent ease duration-200 text-white'>Blogs</Link> 
                 <Link to={`/profile/contacts/${type}`} className='hover:text-accent ease duration-200 text-white'>Contacts</Link>
             </div>
             <div  className='mr-4 flex gap-3 items-center sm:pr-5 pr-1 w-full justify-end'>

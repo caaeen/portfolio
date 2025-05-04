@@ -7,9 +7,9 @@ import Resume from '../../assets/pdf/christopher_canada.pdf'
 const Recruiter = () => {
   return (
     <div className='w-full min-h-svh bg-primary'>
-      <Header type={"recruiter"} />
+      <Header type={"seeker"} />
       <div className='relative w-full min-h-[75vh] overflow-hidden flex flex-col justify-end'>
-        <Banner type={"recruiter"} />
+        <Banner type={"seeker"} />
         <div className='z-30 text-white w-full max-h-[40vh] px-5 pb-5'>
           <b className='sm:text-4xl text-2xl '>Christopher Canada - Web Developer</b><br />
           <div className='mb-3 w-full'></div>
@@ -36,22 +36,22 @@ const Recruiter = () => {
 
       <div className='w-full h-full px-5 text-white pt-15'>
         <div>
-          <b className='text-2xl'>Today's Top Picks For Recruiter</b><br />
+          <b className='text-2xl'>Today's Top Picks For Seeker</b><br />
           <div className='relative text-white max-w-vw flex grow-0 shrink-0 gap-5 overflow-x-auto scrollbar-hide py-4 pb-10'>
-            <Card urls={'/profile/projects/recruiter'} title={"Projects"} img_url={"https://images.unsplash.com/photo-1505699261378-c372af38134c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} />
-            <Card urls={'/profile/skills/recruiter'} title={"Skills"} img_url={"https://images.unsplash.com/photo-1461301214746-1e109215d6d3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} />
-            <Card urls={'/profile/experience/recruiter'} title={"Experience"} img_url={"https://images.unsplash.com/photo-1430876988766-1be68caef0e4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} />
-            <Card urls={'/profile/contacts/recruiter'} title={"Contacts"} img_url={"https://images.unsplash.com/photo-1491466424936-e304919aada7?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} />
+            <Card urls={'/profile/projects/seeker'} title={"Projects"} img_url={"https://images.unsplash.com/photo-1487837647815-bbc1f30cd0d2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} />
+            <Card urls={'/profile/skills/seeker'} title={"Skills"} img_url={"https://images.unsplash.com/photo-1537819191377-d3305ffddce4?q=80&w=2021&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} />
+            
           </div>
         </div>
       </div>
 
       <div className='w-full h-full px-5 text-white pt-15'>
         <div>
-          <b className='text-2xl'>Continue Watching For Recruiter</b><br />
+          <b className='text-2xl'>Continue Watching For Seeker</b><br />
           <div className='relative text-white max-w-vw flex grow-0 shrink-0 gap-5 overflow-x-auto py-4 pb-10'>
-            <Card urls={'/profile/blogs/recruiter'} title={"Blogs"} img_url={"https://images.unsplash.com/photo-1451481086097-f6a15d5f8d18?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} />
-          
+            <Card urls={'/profile/blogs/seeker'} title={"Blogs"} img_url={"https://images.unsplash.com/photo-1608403890614-ec62cb35b46e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} />
+            <Card urls={'/profile/experience/seeker'} title={"Experience"} img_url={"https://images.unsplash.com/photo-1483750356451-828d7d2cec30?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} />
+            <Card urls={'/profile/contacts/seeker'} title={"Contacts"} img_url={"https://images.unsplash.com/photo-1508739773434-c26b3d09e071?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} />
           </div>
         </div>
       </div>

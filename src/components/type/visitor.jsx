@@ -3,7 +3,7 @@ import Header from '../util/header.jsx'
 import Banner from '../util/banner.jsx'
 import { Link } from 'react-router-dom'
 import Card from '../util/card.jsx'
-
+import Resume from '../../assets/pdf/christopher_canada.pdf'
 const Visitor = () => {
   return (
     <div className='w-full min-h-svh bg-primary'>
@@ -21,9 +21,9 @@ const Visitor = () => {
           </p>
         </div>
         <div className='z-30 w-full px-5 flex gap-5 pb-10'>
-          <Link to="" className='hover:bg-gray-400/70 active:bg-gray-500/70 ease duration-200 bg-white text-primary border-white py-2 sm:px-5 px-3 sm:text-[17px] text-[15px] font-bold rounded'>
+          <button onClick={() => window.open(Resume, '_blank')} className='hover:bg-gray-400/70 active:bg-gray-500/70 ease duration-200 bg-white text-primary border-white py-2 sm:px-5 px-3 sm:text-[17px] text-[15px] font-bold rounded'>
             <i className="fa-solid fa-play mr-2"></i> Resume
-          </Link>
+          </button>
 
           <a
             target="blank"
@@ -38,9 +38,10 @@ const Visitor = () => {
         <div>
           <b className='text-2xl'>Today's Top Picks for visitor</b><br />
           <div className='relative text-white max-w-vw flex grow-0 shrink-0 gap-5 overflow-x-auto scrollbar-hide py-4 pb-10'>
-            <Card title={"Projects"} img_url={"https://images.pexels.com/photos/1809644/pexels-photo-1809644.jpeg?cs=srgb&dl=pexels-cmonphotography-1809644.jpg&fm=jpg"} />
-            <Card title={"Skills"} img_url={"https://plus.unsplash.com/premium_photo-1701069017776-1d6363816001?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZGFyayUyMGFlc3RoZXRpY3xlbnwwfHwwfHx8MA%3D%3D"} />
-            <Card title={"Blogs"} img_url={"https://images.unsplash.com/photo-1535587566541-97121a128dc5?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Z3VpdGFyfGVufDB8fDB8fHww"} />
+            <Card urls={'/profile/projects/visitor'} title={"Projects"} img_url={"https://images.unsplash.com/photo-1607791330831-d3dcf312e2d1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} />
+            <Card urls={'/profile/skills/visitor'} title={"Skills"} img_url={"https://images.unsplash.com/photo-1493514789931-586cb221d7a7?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} />
+            <Card urls={'/profile/experience/visitor'} title={"Experience"} img_url={"https://images.unsplash.com/photo-1682799603581-6af7d22eb09a?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} />
+            
           </div>
         </div>
       </div>
@@ -49,7 +50,8 @@ const Visitor = () => {
         <div>
           <b className='text-2xl'>Continue Watching for visitor</b><br />
           <div className='relative text-white max-w-vw flex grow-0 shrink-0 gap-5 overflow-x-auto py-4 pb-10'>
-            <Card title={"Projects"} img_url={""} />
+            <Card urls={'/profile/blogs/visitor'} title={"Blogs"} img_url={"https://images.unsplash.com/photo-1451481086097-f6a15d5f8d18?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} />
+            <Card urls={'/profile/contacts/visitor'} title={"Contacts"} img_url={"https://images.unsplash.com/photo-1442508748335-fde9c3f58fd9?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} />
           </div>
         </div>
       </div>

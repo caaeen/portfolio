@@ -15,7 +15,7 @@ const Banner = ({ type }) => {
       banner = "https://i.pinimg.com/originals/6a/2b/26/6a2b261728dc6d7a3f46b690eb1955b9.gif";
       break;
     case 'developer':
-      banner = sheldon;
+      banner = 'https://giffiles.alphacoders.com/223/223039.gif';
       break;
     default:
       banner = 'https://collinreviews.wordpress.com/wp-content/uploads/2016/09/giphy-41.gif?w=750';
