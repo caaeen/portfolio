@@ -2,9 +2,9 @@ import React, { forwardRef } from 'react';
 
 const BlogsCard = forwardRef(({ title, body, link }, ref) => {
   return (
-    <div
+    <div onClick={() => window.open(link, '_blank')}
       ref={ref}
-      className="bg-secondary rounded-md shadow-md min-h-[100px] relative p-3 hover:animate-bounceScale active:animate-bounceScale"
+      className="cursor-pointer bg-secondary rounded-md shadow-md min-h-[100px] relative p-3 hover:animate-bounceScale active:animate-bounceScale"
     >
       <div className="absolute -top-3 -right-2">
         <a href={link} target="_blank" rel="noopener noreferrer" aria-label="Medium">
